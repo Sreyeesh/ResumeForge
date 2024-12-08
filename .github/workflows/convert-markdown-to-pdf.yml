@@ -1,0 +1,37 @@
+name: Convert Markdown to PDF
+
+on:
+  push:
+    paths:
+      - "resumes/*.md" # Trigger when Markdown files in the resumes folder are updated
+  workflow_dispatch: # Allow manual execution
+
+jobs:
+  convert-md-to-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Install Pandoc and Required Dependencies
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive texlive-xetex texlive-fonts-recommended texlive-latex-extra
+
+      # Step 3: Convert Markdown files to PDF with CSS Styling
+      - name: Convert Markdown Files to PDF
+        run: |
+          for file in resumes/*.md; do
+            [ -e "$file" ] || continue
+            pandoc "$file" -o "${file%.md}.pdf" --css assets/github.css --pdf-engine=xelatex
+          done
+
+      # Step 4: Upload Generated PDFs as Artifacts
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v3
+        with:
+          name: Markdown PDFs
+          path: resumes/*.pdf
