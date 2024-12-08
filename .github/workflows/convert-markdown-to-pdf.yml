@@ -1,10 +1,10 @@
-name: Convert All Markdown to PDF
+name: Convert All Markdown to PDF with Proper Formatting
 
 on:
-  push: # Trigger on any push to the repository
-    branches:
-      - main # Ensure it triggers on the main branch
-  workflow_dispatch: # Allow manual triggering of the workflow
+  push:
+    paths:
+      - "resumes/*.md" # Trigger when Markdown files in the resumes folder are updated
+  workflow_dispatch: # Allow manual execution
 
 jobs:
   convert-md-to-pdf:
@@ -15,19 +15,23 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Step 2: Install Pandoc and Dependencies
-      - name: Install Dependencies
+      # Step 2: Install Dependencies (Pandoc and LaTeX)
+      - name: Install Pandoc and LaTeX Dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y pandoc texlive texlive-xetex texlive-fonts-recommended texlive-latex-extra
 
-      # Step 3: Convert All Markdown Files in Resumes Folder to PDFs
+      # Step 3: Convert Markdown Files to PDF
       - name: Convert Markdown Files to PDF
         run: |
           mkdir -p converted-pdfs
           for file in resumes/*.md; do
             [ -e "$file" ] || continue
-            pandoc "$file" -o "converted-pdfs/$(basename "${file%.md}.pdf")" --css assets/github.css --pdf-engine=xelatex
+            pandoc "$file" -o "converted-pdfs/$(basename "${file%.md}.pdf")" \
+              --from markdown \
+              --to pdf \
+              --pdf-engine=xelatex \
+              --css assets/github.css
           done
 
       # Step 4: Upload PDFs as Artifacts
