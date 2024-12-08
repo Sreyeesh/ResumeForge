@@ -1,9 +1,9 @@
-name: Convert Markdown to PDF
+name: Convert All Markdown to PDF
 
 on:
   push:
     paths:
-      - "resumes/*.md" # Trigger when Markdown files in the resumes folder are updated
+      - "resumes/*.md" # Trigger on changes to any Markdown files in the resumes folder
   workflow_dispatch: # Allow manual execution
 
 jobs:
@@ -15,23 +15,50 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Step 2: Install Pandoc and Required Dependencies
+      # Step 2: Install Pandoc and Dependencies
       - name: Install Dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y pandoc texlive texlive-xetex texlive-fonts-recommended texlive-latex-extra
 
-      # Step 3: Convert Markdown files to PDF with CSS Styling
+      # Step 3: Convert All Markdown Files in Resumes Folder to PDF
       - name: Convert Markdown Files to PDF
         run: |
+          mkdir -p converted-pdfs
           for file in resumes/*.md; do
             [ -e "$file" ] || continue
-            pandoc "$file" -o "${file%.md}.pdf" --css assets/github.css --pdf-engine=xelatex
+            pandoc "$file" -o "converted-pdfs/$(basename "${file%.md}.pdf")" --css assets/github.css --pdf-engine=xelatex
           done
 
-      # Step 4: Upload Generated PDFs as Artifacts
+      # Step 4: Upload All Converted PDFs as Artifacts
       - name: Upload PDFs
         uses: actions/upload-artifact@v3
         with:
           name: Markdown PDFs
-          path: resumes/*.pdf
+          path: converted-pdfs/*.pdf
+
+  # Optional: Commit PDFs Back to the Repository
+  commit-pdfs:
+    needs: convert-md-to-pdf # Runs only after PDF conversion is complete
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the Repository with Write Permissions
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 2: Copy PDFs Back to Resumes Folder
+      - name: Copy PDFs
+        run: |
+          cp converted-pdfs/*.pdf resumes/
+
+      # Step 3: Commit and Push Generated PDFs
+      - name: Commit and Push PDFs
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add resumes/*.pdf
+          git commit -m "chore(resumes): add converted PDFs"
+          git push
