@@ -1,52 +1,41 @@
-name: Convert Markdown Resumes to PDF
+name: Convert Markdown to PDF
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'resumes/*.md' # Trigger only when markdown files in the resumes folder are modified
+      - 'resumes/*.md'
   workflow_dispatch:
 
 jobs:
-  convert-markdown-to-pdf:
+  convert-and-push:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Python environment
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      # Step 3: Install dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install markdown pdfkit
-
-      # Step 4: Install wkhtmltopdf
-      - name: Install wkhtmltopdf
-        run: |
-          sudo apt-get update
           sudo apt-get install -y wkhtmltopdf
 
-      # Step 5: Run the conversion script
-      - name: Convert Markdown to PDF
-        run: |
-          python convert_markdown_to_pdf.py
+      - name: Generate PDFs from Markdown files
+        run: python convert_markdown_to_pdf.py
 
-      # Step 6: Commit and push the generated PDFs
-      - name: Commit and Push PDFs
+      - name: Commit and push PDFs
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add resumes/*.pdf
           git commit -m "chore: add or update generated PDFs"
-          git push
+          git push origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
