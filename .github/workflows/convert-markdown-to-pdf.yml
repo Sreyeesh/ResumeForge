@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: "3.9"
 
-      # Step 3: Install dependencies
+      # Step 3: Install Required Dependencies
       - name: Install Required Dependencies
         run: |
           python -m pip install --upgrade pip
@@ -33,10 +33,14 @@ jobs:
       - name: Convert Markdown Files to PDF
         run: |
           mkdir -p generated_pdfs
-          for file in resumes/*.md; do
-            base_name=$(basename "$file" .md)
-            python scripts/md_to_pdf.py "$file" "generated_pdfs/${base_name}.pdf"
-          done
+          # Find all .md files in the resumes directory and process them
+          find resumes -name "*.md" -exec bash -c '
+            for file; do
+              base_name=$(basename "$file" .md)
+              echo "Processing $file"
+              python scripts/md_to_pdf.py "$file" "generated_pdfs/${base_name}.pdf"
+            done
+          ' bash {} +
 
       # Step 5: Upload PDFs as Artifacts
       - name: Upload Generated PDFs
