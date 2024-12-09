@@ -25,40 +25,30 @@ jobs:
       # Step 3: Install Required Dependencies
       - name: Install Required Dependencies
         run: |
-          python -m pip install --upgrade pip
+          python3 -m pip install --upgrade pip
           pip install markdown pdfkit jinja2
           sudo apt-get update
           sudo apt-get install -y wkhtmltopdf
 
-      # Step 4: Create 'generated_pdfs' folder
+      # Step 4: Create 'generated_pdfs' Folder
       - name: Create 'generated_pdfs' Folder
-        run: |
-          mkdir -p generated_pdfs
-          echo "Directory 'generated_pdfs' has been created."
-          ls -l generated_pdfs  # Verify if the folder exists
+        run: mkdir -p generated_pdfs
 
       # Step 5: Convert Markdown Files to PDF
       - name: Convert Markdown Files to PDF
         run: |
-          find resumes -name "*.md" -exec bash -c '
-            for file; do
-              base_name=$(basename "$file" .md)
-              echo "Processing $file"
-              # Convert Markdown to PDF and save to 'generated_pdfs'
-              python scripts/md_to_pdf.py "$file" "generated_pdfs/${base_name}.pdf" || exit 1
-              echo "Generated PDF: generated_pdfs/${base_name}.pdf"
-            done
-          ' bash {} +
+          python3 scripts/md_to_pdf.py
 
-      # Step 6: List generated PDFs for debugging
+      # Step 6: List Generated PDFs
       - name: List Generated PDFs
         run: |
           echo "Listing generated PDFs in 'generated_pdfs':"
           ls -l generated_pdfs/*.pdf || echo "No PDFs found"
 
-      # Step 7: Upload Generated PDFs as Artifacts
-      - name: Upload Generated PDFs as Artifacts
+      # Step 7: Upload PDFs as Artifacts
+      - name: Upload PDFs as Artifacts
         uses: actions/upload-artifact@v3
         with:
           name: generated-pdfs
-          path: generated_pdfs
+          path: generated_pdfs/*.pdf
+          if-no-files-found: warn
