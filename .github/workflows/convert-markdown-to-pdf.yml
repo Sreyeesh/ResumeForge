@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - "resumes/**/*.md"  # Trigger workflow when Markdown files in resumes folder are changed
-      - ".github/workflows/convert-markdown-to-pdf.yml"  # Trigger workflow when the workflow file itself is changed
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
