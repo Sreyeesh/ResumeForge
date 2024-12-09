@@ -39,11 +39,18 @@ jobs:
             for file in "$@"; do
               base_name=$(basename "$file" .md)
               echo "Processing $file"
-              python scripts/md_to_pdf.py "$file" "generated_pdfs/${base_name}.pdf"
+              python scripts/md_to_pdf.py "$file" "generated_pdfs/${base_name}.pdf" || exit 1
+              echo "Generated PDF: generated_pdfs/${base_name}.pdf"
             done
           ' bash {} +
 
-      # Step 5: Upload generated PDFs as artifacts
+      # Step 5: List generated PDFs for debugging
+      - name: List generated PDFs
+        run: |
+          echo "Listing generated PDFs:"
+          ls -l generated_pdfs/*.pdf || echo "No PDFs found"
+
+      # Step 6: Upload generated PDFs as artifacts
       - name: Upload Generated PDFs as Artifacts
         uses: actions/upload-artifact@v3
         with:
