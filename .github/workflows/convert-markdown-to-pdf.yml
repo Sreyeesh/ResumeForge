@@ -3,9 +3,10 @@ name: Convert Markdown to PDF
 on:
   push:
     paths:
-      - "resumes/**/*.md"  # Trigger workflow on changes to Markdown files in 'resumes' folder
-      - ".github/workflows/convert-markdown-to-pdf.yml"  # Trigger on workflow file changes
-  workflow_dispatch:  # Allows manual triggering
+      - "resumes/**/*.md"  # Trigger workflow on changes to Markdown files
+      - "scripts/md_to_pdf.py"  # Trigger workflow on script updates
+      - ".github/workflows/convert-markdown-to-pdf.yml"  # Trigger workflow on itself
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
   generate-pdfs:
@@ -22,7 +23,7 @@ jobs:
         with:
           python-version: "3.9"
 
-      # Step 3: Install Required Dependencies
+      # Step 3: Install dependencies
       - name: Install Required Dependencies
         run: |
           python3 -m pip install --upgrade pip
@@ -30,20 +31,20 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y wkhtmltopdf
 
-      # Step 4: Create 'generated_pdfs' Folder
-      - name: Create 'generated_pdfs' Folder
+      # Step 4: Create 'generated_pdfs' directory
+      - name: Prepare PDF Output Directory
         run: mkdir -p generated_pdfs
 
-      # Step 5: Convert Markdown Files to PDF
-      - name: Convert Markdown Files to PDF
+      # Step 5: Convert Markdown files to PDFs
+      - name: Run Markdown-to-PDF Script
         run: |
           python3 scripts/md_to_pdf.py
 
-      # Step 6: List Generated PDFs
-      - name: List Generated PDFs
+      # Step 6: Debugging Step - Verify PDF Generation
+      - name: Verify Generated PDFs
         run: |
-          echo "Listing generated PDFs in 'generated_pdfs':"
-          ls -l generated_pdfs/*.pdf || echo "No PDFs found"
+          echo "Listing contents of 'generated_pdfs' directory:"
+          ls -l generated_pdfs || echo "No PDFs found."
 
       # Step 7: Upload PDFs as Artifacts
       - name: Upload PDFs as Artifacts

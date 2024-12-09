@@ -45,24 +45,21 @@ def find_md_files_in_directory(directory):
     return md_files
 
 def main():
-    # Path to the directory where Markdown files are stored
     resumes_dir = './resumes'
-    
-    # Path to the CSS file for styling
     css_file_path = './styles/github-markdown.css'
-    
-    # Find all Markdown files in the resumes directory
+    output_dir = './generated_pdfs'
+
+    os.makedirs(output_dir, exist_ok=True)  # Ensure 'generated_pdfs' directory exists
+
     md_files = find_md_files_in_directory(resumes_dir)
-
-    # Process each Markdown file
     for md_file in md_files:
-        # Set output PDF file path
-        output_pdf = md_file.replace('.md', '.pdf')
+        base_name = os.path.basename(md_file).replace('.md', '.pdf')
+        output_pdf = os.path.join(output_dir, base_name)
 
-        # Convert Markdown to PDF
         print(f"Processing: {md_file}")
         convert_markdown_to_pdf(md_file, output_pdf, css_file_path)
         print(f"PDF generated: {output_pdf}")
+
 
 if __name__ == "__main__":
     main()
