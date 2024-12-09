@@ -41,5 +41,10 @@ jobs:
               python scripts/md_to_pdf.py "$file" "generated_pdfs/${base_name}.pdf"
             done
           ' bash {} +
-          
-      # Step 5: No file upload step, PDFs are only generated and saved locally
+
+      # Step 5: Upload generated PDFs as artifacts
+      - name: Upload Generated PDFs as Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: generated-pdfs
+          path: generated_pdfs/*.pdf
