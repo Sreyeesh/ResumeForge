@@ -29,13 +29,18 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y wkhtmltopdf
 
-      # Step 4: Generate PDFs for Markdown files
-      - name: Convert Markdown Files to PDF
+      # Step 4: Create the 'generated_pdfs' folder and confirm its creation
+      - name: Verify 'generated_pdfs' folder creation
         run: |
           mkdir -p generated_pdfs
-          # Find all .md files in the resumes directory and process them
+          echo "Directory 'generated_pdfs' has been created at the root."
+          ls -l generated_pdfs  # Verify if the folder exists
+
+      # Step 5: Convert Markdown Files to PDF
+      - name: Convert Markdown Files to PDF
+        run: |
           find resumes -name "*.md" -exec bash -c '
-            for file in "$@"; do
+            for file; do
               base_name=$(basename "$file" .md)
               echo "Processing $file"
               python scripts/md_to_pdf.py "$file" "generated_pdfs/${base_name}.pdf" || exit 1
@@ -43,13 +48,13 @@ jobs:
             done
           ' bash {} +
 
-      # Step 5: List generated PDFs for debugging
+      # Step 6: List generated PDFs for debugging
       - name: List generated PDFs
         run: |
           echo "Listing generated PDFs:"
           ls -l generated_pdfs/*.pdf || echo "No PDFs found"
 
-      # Step 6: Upload generated PDFs as artifacts
+      # Step 7: Upload generated PDFs as artifacts
       - name: Upload Generated PDFs as Artifacts
         uses: actions/upload-artifact@v3
         with:
