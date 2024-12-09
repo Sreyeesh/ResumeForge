@@ -1,65 +1,60 @@
 import os
+import sys
+import logging
+import markdown
 import pdfkit
-from markdown import markdown
-from jinja2 import Template
 
-def convert_markdown_to_pdf(input_path, output_path, css_path):
-    """Convert Markdown file to PDF using the specified CSS."""
-    # Read the Markdown file
-    with open(input_path, 'r') as f:
-        md_content = f.read()
-    
-    # Convert Markdown to HTML
-    html_content = markdown(md_content)
-    
-    # Apply CSS for styling
-    with open(css_path, 'r') as css_file:
-        css = css_file.read()
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[logging.StreamHandler(), logging.FileHandler("conversion.log", mode="w")]
+)
 
-    # Create the final HTML template with applied CSS
-    html_template = f"""
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Resume</title>
-        <style>{css}</style>
-    </head>
-    <body>
-        <div class="markdown-body">
-            {html_content}
-        </div>
-    </body>
-    </html>
+def convert_md_to_pdf(input_path, output_path):
     """
-    
-    # Generate PDF from HTML
-    pdfkit.from_string(html_template, output_path)
+    Convert a Markdown file to a PDF.
 
-def find_md_files_in_directory(directory):
-    """Find all .md files in a directory."""
-    md_files = []
-    for root, dirs, files in os.walk(directory):
-        for file in files:
-            if file.endswith('.md'):
-                md_files.append(os.path.join(root, file))
-    return md_files
+    :param input_path: Path to the input Markdown file.
+    :param output_path: Path to the output PDF file.
+    """
+    try:
+        if not os.path.exists(input_path):
+            logging.error(f"Input file does not exist: {input_path}")
+            return False
 
-def main():
-    resumes_dir = './resumes'
-    css_file_path = './styles/github-markdown.css'
-    output_dir = './generated_pdfs'
-
-    os.makedirs(output_dir, exist_ok=True)  # Ensure 'generated_pdfs' directory exists
-
-    md_files = find_md_files_in_directory(resumes_dir)
-    for md_file in md_files:
-        base_name = os.path.basename(md_file).replace('.md', '.pdf')
-        output_pdf = os.path.join(output_dir, base_name)
-
-        print(f"Processing: {md_file}")
-        convert_markdown_to_pdf(md_file, output_pdf, css_file_path)
-        print(f"PDF generated: {output_pdf}")
-
+        with open(input_path, "r") as f:
+            md_content = f.read()
+        
+        # Convert Markdown to HTML
+        html_content = markdown.markdown(md_content)
+        
+        # Convert HTML to PDF
+        pdfkit.from_string(html_content, output_path)
+        logging.info(f"Successfully converted {input_path} to {output_path}")
+        return True
+    except Exception as e:
+        logging.error(f"Error converting {input_path} to PDF: {e}")
+        return False
 
 if __name__ == "__main__":
-    main()
+    # Ensure correct number of arguments
+    if len(sys.argv) < 3:
+        logging.error("Usage: python md_to_pdf.py <input_file.md> <output_file.pdf>")
+        sys.exit(1)
+    
+    # Get input and output paths
+    input_file = sys.argv[1]
+    output_file = sys.argv[2]
+
+    # Create the output directory if it doesn't exist
+    output_dir = os.path.dirname(output_file)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+        logging.info(f"Created directory: {output_dir}")
+
+    # Convert the Markdown file to a PDF
+    success = convert_md_to_pdf(input_file, output_file)
+    if not success:
+        logging.error(f"Failed to convert {input_file} to {output_file}")
+        sys.exit(1)
