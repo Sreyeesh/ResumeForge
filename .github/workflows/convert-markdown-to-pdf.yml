@@ -42,8 +42,4 @@ jobs:
             done
           ' bash {}
 
-      # Step 5: Generate a debug HTML for inspection (if needed)
-      - name: Generate Debug HTML
-        run: |
-          python scripts/debug.py > debug.html
-        continue-on-error: true  # Allows the workflow to continue even if this step fails
+      # Step 5: No file upload step, PDFs are only generated and saved locally
