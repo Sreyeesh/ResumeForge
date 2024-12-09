@@ -44,6 +44,7 @@ jobs:
             for file; do
               base_name=$(basename "$file" .md)
               echo "Processing $file"
+              # Ensure the PDFs are saved in the correct folder (generated_pdfs)
               python scripts/md_to_pdf.py "$file" "generated_pdfs/${base_name}.pdf" || exit 1
               echo "Generated PDF: generated_pdfs/${base_name}.pdf"
             done
