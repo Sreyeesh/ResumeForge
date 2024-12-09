@@ -35,11 +35,11 @@ jobs:
           mkdir -p generated_pdfs
           # Find all .md files in the resumes directory and process them
           find resumes -name "*.md" -exec bash -c '
-            for file; do
+            for file in "$@"; do
               base_name=$(basename "$file" .md)
               echo "Processing $file"
               python scripts/md_to_pdf.py "$file" "generated_pdfs/${base_name}.pdf"
             done
-          ' bash {}
-
+          ' bash {} +
+          
       # Step 5: No file upload step, PDFs are only generated and saved locally
