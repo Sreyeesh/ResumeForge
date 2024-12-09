@@ -40,6 +40,4 @@ jobs:
               echo "Processing $file"
               python scripts/md_to_pdf.py "$file" "generated_pdfs/${base_name}.pdf"
             done
-          ' bash {} +
-          
-      # Step 5: No file upload step, PDF files are only generated
+          ' bash {}
