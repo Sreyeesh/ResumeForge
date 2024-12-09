@@ -3,8 +3,8 @@ name: Convert Markdown to PDF
 on:
   push:
     paths:
-      - "resumes/**/*.md"  # Trigger workflow when Markdown files in resumes folder are changed
-      - ".github/workflows/convert-markdown-to-pdf.yml"  # Trigger workflow when the workflow file itself is changed
+      - "resumes/**/*.md"  # Trigger workflow on changes to Markdown files in 'resumes' folder
+      - ".github/workflows/convert-markdown-to-pdf.yml"  # Trigger on workflow file changes
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
@@ -30,11 +30,11 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y wkhtmltopdf
 
-      # Step 4: Create 'generated_pdfs' folder and check if it's created
-      - name: Verify 'generated_pdfs' folder creation
+      # Step 4: Create 'generated_pdfs' folder
+      - name: Create 'generated_pdfs' Folder
         run: |
           mkdir -p generated_pdfs
-          echo "Directory 'generated_pdfs' has been created at the root."
+          echo "Directory 'generated_pdfs' has been created."
           ls -l generated_pdfs  # Verify if the folder exists
 
       # Step 5: Convert Markdown Files to PDF
@@ -44,21 +44,21 @@ jobs:
             for file; do
               base_name=$(basename "$file" .md)
               echo "Processing $file"
-              # Ensure the PDFs are saved in the correct folder (generated_pdfs)
+              # Convert Markdown to PDF and save to 'generated_pdfs'
               python scripts/md_to_pdf.py "$file" "generated_pdfs/${base_name}.pdf" || exit 1
               echo "Generated PDF: generated_pdfs/${base_name}.pdf"
             done
           ' bash {} +
 
       # Step 6: List generated PDFs for debugging
-      - name: List generated PDFs
+      - name: List Generated PDFs
         run: |
           echo "Listing generated PDFs in 'generated_pdfs':"
           ls -l generated_pdfs/*.pdf || echo "No PDFs found"
 
-      # Step 7: Upload generated PDFs as artifacts
+      # Step 7: Upload Generated PDFs as Artifacts
       - name: Upload Generated PDFs as Artifacts
         uses: actions/upload-artifact@v3
         with:
           name: generated-pdfs
-          path: generated_pdfs/*.pdf
+          path: generated_pdfs
