@@ -26,12 +26,39 @@ def convert_md_to_pdf(input_path, output_path):
         # Read Markdown file with UTF-8 encoding
         with open(input_path, "r", encoding="utf-8") as f:
             md_content = f.read()
-        
+
         # Convert Markdown to HTML
-        html_content = markdown.markdown(md_content)
-        
-        # Convert HTML to PDF with proper encoding
-        pdfkit.from_string(html_content, output_path)
+        html_content = markdown.markdown(md_content, output_format="html5")
+
+        # Add inline CSS for font styling
+        inline_css = """
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12pt;
+            line-height: 1.6;
+            color: #000000;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Arial, sans-serif;
+            color: #333333;
+        }
+        </style>
+        """
+        html_content = inline_css + html_content
+
+        # Save HTML content for debugging
+        with open("debug.html", "w", encoding="utf-8") as debug_file:
+            debug_file.write(html_content)
+
+        # Convert HTML to PDF
+        pdfkit_options = {
+            "encoding": "UTF-8",
+            "quiet": "",
+            "dpi": 300,
+        }
+        pdfkit.from_string(html_content, output_path, options=pdfkit_options)
+
         logging.info(f"Successfully converted {input_path} to {output_path}")
         return True
     except Exception as e:
@@ -39,11 +66,10 @@ def convert_md_to_pdf(input_path, output_path):
         return False
 
 if __name__ == "__main__":
-    # Ensure correct number of arguments
     if len(sys.argv) < 3:
         logging.error("Usage: python md_to_pdf.py <input_file.md> <output_file.pdf>")
         sys.exit(1)
-    
+
     # Get input and output paths
     input_file = sys.argv[1]
     output_file = sys.argv[2]
