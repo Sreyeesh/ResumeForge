@@ -4,9 +4,9 @@ on:
   push:
     paths:
       - "resumes/**/*.md"  # Trigger workflow on changes to Markdown files in 'resumes'
-      - "cover-letters/**/*.md"  # Trigger workflow on changes to Markdown files in 'cover-letters'
+      - "resumes/cover-letters/**/*.md"  # Trigger workflow on changes to Markdown files in 'cover-letters'
       - "scripts/md_to_pdf.py"  # Trigger workflow on script updates
-      - ".github/workflows/convert-markdown-to-pdf.yml"  # Trigger workflow on itself
+      - ".github/workflows/convert-markdown-to-pdf.yml"  # Trigger workflow on changes to this file
   workflow_dispatch:  # Allow manual triggering
 
 jobs:
@@ -37,19 +37,16 @@ jobs:
         run: mkdir -p generated_pdfs
 
       # Step 5: Convert Markdown files to PDFs
-# Step 5: Convert Markdown files to PDFs
-    - name: Run Markdown-to-PDF Script
-    run: |
-        find resumes -name "*.md" -exec bash -c '
-        for file; do
-            base_name=$(basename "$file" .md)
-            output_file="generated_pdfs/${base_name}.pdf"
-            echo "Processing $file -> $output_file"
-            python3 scripts/md_to_pdf.py "$file" "$output_file" || exit 1
-        done
-        ' bash {} +
-
-
+      - name: Run Markdown-to-PDF Script
+        run: |
+          find resumes -name "*.md" -exec bash -c '
+            for file; do
+              base_name=$(basename "$file" .md)
+              output_file="generated_pdfs/${base_name}.pdf"
+              echo "Processing $file -> $output_file"
+              python3 scripts/md_to_pdf.py "$file" "$output_file" || exit 1
+            done
+          ' bash {} +
 
       # Step 6: Debugging Step - Verify PDF Generation
       - name: Verify Generated PDFs
