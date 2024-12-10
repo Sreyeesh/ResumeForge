@@ -23,13 +23,14 @@ def convert_md_to_pdf(input_path, output_path):
             logging.error(f"Input file does not exist: {input_path}")
             return False
 
-        with open(input_path, "r") as f:
+        # Read Markdown file with UTF-8 encoding
+        with open(input_path, "r", encoding="utf-8") as f:
             md_content = f.read()
         
         # Convert Markdown to HTML
         html_content = markdown.markdown(md_content)
         
-        # Convert HTML to PDF
+        # Convert HTML to PDF with proper encoding
         pdfkit.from_string(html_content, output_path)
         logging.info(f"Successfully converted {input_path} to {output_path}")
         return True
