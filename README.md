@@ -1,4 +1,3 @@
-Here’s a detailed **README.md** tailored for the **ResumeForge** project itself:
 
 ---
 
