@@ -1,3 +1,4 @@
+Here's the updated **README.md** without the "License" section:
 
 ---
 
@@ -9,15 +10,15 @@
 
 ## Features
 
-- **Markdown to PDF Conversion**:
+- **Markdown to PDF Conversion**:  
   Easily generate beautifully styled PDFs from Markdown files.
-- **Customizable Styling**:
+- **Customizable Styling**:  
   Use inline CSS or external stylesheets to control the appearance of your PDFs.
-- **GitHub Actions Integration**:
+- **GitHub Actions Integration**:  
   Automate the PDF generation process whenever a Markdown file is updated.
-- **Template Management**:
+- **Template Management**:  
   Organize and version-control multiple resumes and cover letters using Git.
-- **Dynamic Directory Structure**:
+- **Dynamic Directory Structure**:  
   Keep your resumes, cover letters, and scripts well-organized.
 
 ---
@@ -66,11 +67,17 @@ Follow these steps to set up and use ResumeForge:
    cd ResumeForge
    ```
 
-2. Install Python dependencies:
+2. Install Python dependencies from `requirements.txt`:
    ```bash
    python3 -m pip install --upgrade pip
    pip install -r requirements.txt
    ```
+
+   The following libraries are required for the project:
+   - **Jinja2==3.1.4**: Templating engine for HTML generation.
+   - **Markdown==3.7**: Converts Markdown files to HTML.
+   - **MarkupSafe==3.0.2**: Supports safe handling of strings in Jinja2.
+   - **pdfkit==1.0.0**: Generates PDF files from HTML using `wkhtmltopdf`.
 
 3. Install `wkhtmltopdf`:
    ```bash
@@ -169,12 +176,6 @@ Contributions are welcome! Here’s how you can help:
 
 ---
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
 ## Acknowledgments
 
 Special thanks to the open-source tools and libraries used in this project:
@@ -182,3 +183,5 @@ Special thanks to the open-source tools and libraries used in this project:
 - [Python-Markdown](https://python-markdown.github.io/)
 
 ---
+
+Let me know if there's anything else you'd like me to tweak! 🚀
