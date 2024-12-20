@@ -1,4 +1,4 @@
-Here's the updated **README.md** without the "License" section:
+
 
 ---
 
@@ -184,4 +184,3 @@ Special thanks to the open-source tools and libraries used in this project:
 
 ---
 
-Let me know if there's anything else you'd like me to tweak! 🚀
