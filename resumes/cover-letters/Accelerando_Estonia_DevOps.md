@@ -1,28 +1,21 @@
-Dear Hiring Manager,
+Dear Hiring Team at MatchMySound,
 
-I am excited to apply for the DevOps Engineer position at MatchMySound. With extensive experience in automating infrastructure, building scalable CI/CD pipelines, and implementing advanced testing frameworks, I am eager to contribute my skills to your innovative team in Tartu.
+I am excited to apply for the DevOps Engineer (CI/CD and Automated Testing Specialist) position at MatchMySound. With a strong background in cloud infrastructure management, scalable CI/CD pipelines, and advanced testing frameworks, I bring a proven track record of delivering reliable and high-performance solutions aligned with organizational goals.
 
-In my current role as a DevOps Consultant, I have:
+In my most recent role as a DevOps Consultant, I designed and managed AWS cloud infrastructure to ensure high availability and scalability. I developed CI/CD pipelines using Jenkins and Ansible, reducing deployment times by 30%, and integrated automated testing frameworks with Selenium and Postman for seamless delivery. My experience with microservices-based architecture and hands-on expertise with Docker and Kubernetes has enabled me to implement resilient systems with optimized performance.
 
-- Designed and managed AWS and Azure cloud environments, ensuring high availability and scalability.
-- Developed CI/CD pipelines using tools like Jenkins, Ansible, and Terraform to streamline deployments.
-- Implemented automated testing frameworks using Selenium and Postman to enhance application reliability.
-- Integrated monitoring solutions such as Grafana and Prometheus to optimize performance and ensure proactive issue resolution.
+Highlights of my qualifications include:
 
-Collaboration and continuous improvement are at the heart of my approach. Working closely with development teams, I have ensured alignment between testing tools and the software lifecycle, fostering a culture of reliability and efficiency. My hands-on experience with containerization technologies like Docker and Kubernetes has allowed me to deploy microservices-based architectures, driving scalability and performance.
+Cloud Infrastructure: Managed AWS environments using Infrastructure as Code tools, ensuring reliability and scalability.
+CI/CD Expertise: Built and maintained CI/CD pipelines to support seamless deployments across multi-service applications.
+Automation and Testing: Developed Python scripts and integrated testing tools to enhance reliability and rollback mechanisms.
+Monitoring and Performance: Set up monitoring dashboards with Grafana and Prometheus to proactively address system performance and uptime.
+What excites me most about this opportunity is the chance to collaborate with a dynamic team to shape the future of music education. My proactive mindset, combined with my technical expertise, aligns well with your mission to deliver exceptional reliability and performance. Moreover, my passion for continuous learning ensures I am always seeking innovative solutions to complex challenges.
 
-MatchMySound's mission to shape the future of music education aligns with my passion for leveraging technology to create impactful solutions. I am particularly impressed by your emphasis on professional growth and innovation, values I strive to embody in my work.
+I invite you to explore my interactive terminal portfolio to learn more about my projects and technical skills. I am eager to contribute my experience and drive to your team and would welcome the opportunity to discuss how my background aligns with your vision for this role.
 
-I would welcome the opportunity to bring my expertise in DevOps and cloud engineering to your team. I am confident that my technical skills and proactive mindset make me a strong fit for this role.
+Thank you for considering my application. I look forward to the possibility of contributing to the innovative solutions at MatchMySound. Please feel free to contact me at +372 5827 7155 or sgarime1@gmail.com to arrange a discussion.
 
-Thank you for considering my application. I look forward to the possibility of contributing to MatchMySound’s success and would be delighted to discuss how my experience aligns with your needs.
-
-Best regards,
-
-Sreyeesh Garimella  
-Valgjärve, Põlvamaa, Estonia  
-+372 5827 7155  
-[sgarime1@gmail.com](mailto:sgarime1@gmail.com)  
-[LinkedIn](https://www.linkedin.com/in/sreyeeshgarimella)  
-[Portfolio](https://ittoucan.com)
+Sincerely,
+Sreyeesh Garimella
 
