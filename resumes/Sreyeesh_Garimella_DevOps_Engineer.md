@@ -1,5 +1,6 @@
 **Sreyeesh Garimella**
 Valgjärve, Põlvamaa, Estonia
+[Portfolio Site](https://sreyeesh.github.io/sreyeesh-devops-terminal/)
 +372 5827 7155 | [sgarime1@gmail.com](mailto\:sgarime1@gmail.com) | [LinkedIn](https://www.linkedin.com/in/sreyeeshgarimella) | [Portfolio](https://ittoucan.com)
 
 ---
@@ -54,9 +55,7 @@ Dynamic DevOps Engineer and Cloud Specialist with extensive experience in cloud 
 - Implemented CI/CD automation for faster and more reliable software releases.
 - Enhanced cloud monitoring systems with Grafana to ensure system reliability.
 
-#### **DevOps Engineer (Render Wrangler)**
-
-- Automated workflows for cloud rendering and ensured infrastructure scalability, aligning with DevOps principles of efficiency and reliability.
+#### **write**
 
 **Boulder Media**\
 *November 2019 – January 2021* | Dublin, Ireland
