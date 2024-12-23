@@ -1,109 +1,121 @@
 **Sreyeesh Garimella**
 Valgjärve, Põlvamaa, Estonia
-+372 5827 7155 | [sgarime1@gmail.com](mailto:sgarime1@gmail.com) | [LinkedIn](https://www.linkedin.com/in/sreyeeshgarimella) | [Portfolio](https://ittoucan.com)
++372 5827 7155 | [sgarime1@gmail.com](mailto\:sgarime1@gmail.com) | [LinkedIn](https://www.linkedin.com/in/sreyeeshgarimella) | [Portfolio](https://ittoucan.com)
 
 ---
 
-### **DevOps Engineer (CI/CD and Automated Testing Specialist)**
+### **DevOps Engineer**
 
 **Summary**
-Skilled Technical Director, DevOps Specialist, and Python Developer with extensive experience in automating infrastructure solutions, optimizing workflows, and improving operational efficiency across industries including visual effects and IT consulting. Proficient in leveraging tools like Python, Docker, Ansible, and Grafana to create scalable and efficient systems. Passionate about implementing DevOps practices, developing automation scripts, and mentoring teams to deliver high-quality solutions.
+Dynamic DevOps Engineer and Cloud Specialist with extensive experience in cloud infrastructure, scalable CI/CD pipelines, and advanced monitoring systems. Expertise in AWS and Azure platforms, automated testing frameworks, and containerization technologies. Proven track record of optimizing workflows, building reliable systems, and delivering high-quality solutions for diverse industries.
 
 ---
 
 ### **Key Skills**
 
+- **Cloud Platforms:** AWS (EC2, S3, CloudFormation), Azure
+- **Rendering Systems:** AWS Cloud Rendering, Deadline Monitoring
+- **DevOps Tools:** Jenkins, Ansible, Terraform, Docker, Kubernetes
 - **Programming & Scripting:** Python, Bash, SQL, JavaScript, Lua
-- **Rendering Tools:** Deadline, RenderMan, Katana, V-Ray
-- **Pipeline Tools:** Maya, Nuke, Shotgun, Houdini
-- **DevOps & Automation:** Docker, Kubernetes, Ansible, Terraform, Jenkins
 - **Monitoring & Visualization:** Grafana, Prometheus
-- **Database Management:** MongoDB, PostgreSQL, MySQL
-- **Cloud Platforms:** AWS, Azure
+- **Database Management:** PostgreSQL, MongoDB, MySQL
+- **Automation & Testing:** Selenium, Postman, Appium
 - **Version Control:** Git, GitLab, GitHub
 
 ---
 
 ### **Professional Experience**
 
-#### **DevOps & Multi-Disciplinary IT Consultant**
+#### **DevOps Consultant**
 
-*November 2023 – Present* | Estonia  
-- Provided technical support, resolving system issues to ensure seamless operations.  
-- Configured and managed scalable cloud environments on AWS and Azure.  
-- Developed CI/CD pipelines using Jenkins, Terraform, and Ansible.  
-- Implemented monitoring solutions with Grafana for real-time performance tracking.
+*November 2023 – Present* | Estonia
+
+- Designed and managed AWS cloud infrastructure, ensuring high availability and scalability.
+- Developed CI/CD pipelines using Jenkins and Ansible, reducing deployment times by 30%.
+- Integrated monitoring tools like Grafana to proactively optimize system performance.
+- Automated testing frameworks using Selenium and Postman for reliable application delivery.
+- Developed AWS tools and pipeline automation scripts using Python to scale infrastructure and streamline deployments to the cloud, enabling automated workflows for cloud rendering.
 
 #### **Owner & Full Stack Developer**
 
-**SG Production OÜ**  
-*July 2022 – Present* | Estonia  
-- Developed and automated Python-based tools for workflow optimization in VFX and IT.  
-- Deployed scalable cloud systems using Docker and Ansible.  
-- Integrated MongoDB and PostgreSQL for efficient database management.
+**SG Production OÜ**\
+*July 2022 – Present* | Estonia
+
+- Created Python-based tools to automate workflows in VFX and IT consulting.
+- Deployed scalable cloud solutions with Docker and Ansible.
+- Managed and optimized PostgreSQL and MongoDB databases for backend operations.
 
 #### **DevOps Engineer**
 
-**Smartmatic-Cybernetica C.O.E for Internet Voting**  
-*January 2024 – August 2024* | Estonia  
-- Architected secure infrastructure with Docker, Ansible, and AWS EC2.  
-- Created Python-based automation scripts for CI/CD pipelines.  
-- Implemented monitoring tools (Grafana) for performance tracking.
+**Smartmatic-Cybernetica C.O.E for Internet Voting**\
+*January 2024 – August 2024* | Tartu, Estonia
+
+- Architected infrastructure solutions using Docker, Ansible, and AWS EC2.
+- Implemented CI/CD automation for faster and more reliable software releases.
+- Enhanced cloud monitoring systems with Grafana to ensure system reliability.
+
+#### **DevOps Engineer (Render Wrangler)**
+
+- Automated workflows for cloud rendering and ensured infrastructure scalability, aligning with DevOps principles of efficiency and reliability.
+
+**Boulder Media**\
+*November 2019 – January 2021* | Dublin, Ireland
+
+- Utilized AWS cloud rendering for large-scale rendering projects, processing terabytes of data.
+- Set up cloud storage and integrated Deadline for monitoring and queuing rendering jobs.
+- Proactively resolved infrastructure issues, ensuring efficient rendering workflows.
+- Used Grafana to monitor system and network traffic and set up custom dashboards for enhanced visibility.
 
 #### **Lighting Technical Director**
 
-**DNEG**  
-*August 2022 – March 2023* | London, UK  
-- Automated lighting and rendering processes with Python and Katana.  
-- Integrated RenderMan for shader development.  
-- Monitored system performance and optimized render times.
+**DNEG**\
+*August 2022 – March 2023* | London, UK
 
-#### **Render Wrangler**
+- Automated rendering and lighting processes with Python, improving team efficiency.
+- Deployed RenderMan shaders and monitored system performance for optimal output.
 
-**Boulder Media**  
-*November 2019 – January 2021* | Dublin, Ireland  
-- Managed render queues with Deadline, optimizing workflows.  
-- Automated rendering processes using Python and Shell scripting.  
-- Proactively resolved infrastructure issues with Grafana monitoring.
+#### **Production Show Technician**
 
----
+**Blizzard Entertainment**\
+*May 2021 – November 2021* | Irvine, CA, USA
 
-### **Certifications**
-
-- Build Front End Web Apps from Scratch  
-- Introduction to Python 3 Programming  
-- Front End Web Development Basics with React.js  
-- Programming with Python  
-- Introduction to CSS Training
+- Developed Python and Lua scripts to streamline pipelines for in-game cinematics.
+- Supported World of Warcraft and Overwatch 2 animation teams with optimized workflows.
 
 ---
 
 ### **Education**
 
-- **Bachelor of Arts in Animation** – California State University, Northridge (2010–2012)  
+- **Bachelor of Arts in Animation** – California State University, Northridge (2010–2012)
 - **Associate of Arts in Animation** – College of the Canyons (2007–2010)
+
+---
+
+### **Certifications**
+
+- Build Front-End Web Apps from Scratch
+- Introduction to Python 3 Programming
+- Front-End Web Development Basics with React.js
+- Programming with Python
+- Introduction to CSS Training
 
 ---
 
 ### **Notable Projects**
 
-- **Automated Cloud Scaling:** Designed and deployed scalable cloud infrastructure using AWS and Kubernetes.
-- **CI/CD Optimization:** Implemented CI/CD pipelines for multiple organizations, reducing deployment times by 30%.
-- **Monitoring Solutions:** Integrated Grafana dashboards for real-time performance monitoring, minimizing downtime.
+- **AWS Cloud Rendering:** Architected and managed cloud rendering systems for large-scale VFX projects, ensuring efficient processing of terabytes of data.
 
----
+- **Grafana Dashboards:** Set up and configured custom dashboards to monitor system and network traffic, enhancing operational transparency.
 
-### **Courses Taught**
+- **CI/CD Optimization:** Designed scalable pipelines that reduced deployment times and improved system reliability.
 
-- **Introduction to Python Programming**: A beginner-friendly course focused on Python basics, data structures, and simple project development.
-- **DevOps Essentials**: Covering CI/CD pipelines, Docker basics, and Infrastructure as Code with Ansible and Terraform.
-- **Cloud Computing with AWS**: An introduction to AWS services, including EC2, S3, and RDS, with practical deployment examples.
-- **Automated Testing Frameworks**: Hands-on exploration of testing tools such as Selenium, Appium, and Postman for robust application development.
+- **Monitoring Solutions:** Integrated advanced monitoring dashboards with Grafana and Prometheus, enabling proactive issue resolution.
 
 ---
 
 ### **Hobbies and Interests**
 
-- Active participation in DevOps communities and forums.
-- Building personal projects to explore emerging technologies in cloud computing and automation.
+- Active participation in DevOps and VFX communities.
+- Exploring emerging technologies in cloud computing and automation.
+- Developing personal projects to enhance technical skills.
 
