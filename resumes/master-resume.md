@@ -1,77 +1,71 @@
 # Sreyeesh Garimella
-
-**Technical Director | DevOps Specialist | Python Developer**  
+**Full Stack Developer | Technical Director | DevOps Specialist | Python Developer**  
 Valgjärve, Põlvamaa, Estonia  
 [LinkedIn](https://www.linkedin.com/in/sreyeeshgarimella) | [Portfolio](https://ittoucan.com)  
 **Email**: [sgarime1@gmail.com](mailto:sgarime1@gmail.com) | **Phone**: [+372 5827 7155](tel:+37258277155)
 
 ---
 
-## Professional Summary
+## **Professional Summary**
 
-Skilled **Technical Director**, **DevOps Specialist**, and **Python Developer** with extensive experience in automating infrastructure solutions, optimizing workflows, and improving operational efficiency across industries including visual effects and IT consulting. Proficient in leveraging tools like **Python**, **Docker**, **Ansible**, and **Grafana** to create scalable and efficient systems. Passionate about implementing DevOps practices, developing automation scripts, and mentoring teams to deliver high-quality solutions.
-
----
-
-## Technical Skills
-
-- **Programming & Scripting**: Python, Bash, SQL, JavaScript, Lua
-- **Rendering Tools**: Deadline, RenderMan, Katana, V-Ray
-- **Pipeline Tools**: Maya, Nuke, Shotgun, Houdini
-- **DevOps & Automation**: Docker, Kubernetes, Ansible, Terraform, Jenkins
-- **Monitoring & Visualization**: Grafana, Prometheus
-- **Database Management**: MongoDB, PostgreSQL, MySQL
-- **Cloud Platforms**: AWS, Azure
-- **Version Control**: Git, GitLab, GitHub
+Skilled **Full-Stack Developer**, **Technical Director**, and **DevOps Specialist** with extensive experience in developing and delivering **full-stack applications** for animation tools such as **Deadline**, **ShotGrid**, and **Katana**. Proficient in both **frontend** and **backend** development, from **user experience design** to **backend architecture**. Expertise in **REST API** development, **cloud platforms (AWS, Azure)**, **database management (MongoDB, SQL)**, and integrating industry tools for optimized workflows. Experienced in mentoring teams, managing complex infrastructure, and transitioning legacy code from **Python 2 to 3**.
 
 ---
 
-## Professional Experience
+## **Technical Skills**
 
-### DevOps & Multi-Disciplinary IT Consultant
-
-**November 2023 – Present | Estonia**  
-
-- Provided technical support, resolving system issues to ensure seamless operations.  
-- Configured and managed scalable cloud environments on **AWS** and **Azure**.  
-- Developed CI/CD pipelines using **Jenkins**, **Terraform**, and **Ansible**.  
-- Implemented monitoring solutions with **Grafana** for real-time performance tracking.
-
-### Owner & Full Stack Developer | SG Production OÜ
-
-**July 2022 – Present | Estonia**  
-
-- Developed and automated Python-based tools for workflow optimization in VFX and IT.  
-- Deployed scalable cloud systems using **Docker** and **Ansible**.  
-- Integrated **MongoDB** and **PostgreSQL** for efficient database management.
-
-### DevOps Engineer | Smartmatic-Cybernetica C.O.E for Internet Voting
-
-**January 2024 – August 2024 | Estonia**  
-
-- Architected secure infrastructure with **Docker**, **Ansible**, and **AWS EC2**.  
-- Created Python-based automation scripts for CI/CD pipelines.  
-- Implemented monitoring tools (**Grafana**) for performance tracking.
-
-### Lighting Technical Director | DNEG
-
-**August 2022 – March 2023 | London, UK**  
-
-- Automated lighting and rendering processes with Python and Katana.  
-- Integrated RenderMan for shader development.  
-- Monitored system performance and optimized render times.
-
-### Render Wrangler | Boulder Media
-
-**November 2019 – January 2021 | Dublin, Ireland**  
-
-- Managed render queues with Deadline, optimizing workflows.  
-- Automated rendering processes using Python and Shell scripting.  
-- Proactively resolved infrastructure issues with **Grafana** monitoring.
+- **Programming & Scripting**: Python (2 & 3), Bash, SQL, JavaScript, Lua, Go  
+- **Frontend Development**: React, Vue.js, Next.js, JavaScript, HTML/CSS  
+- **Backend Development**: Node.js, Express, Go, PHP, REST APIs, SQL (PostgreSQL, MySQL), MongoDB  
+- **Tools & APIs**: **ShotGrid**, **Deadline Monitor**, **Katana**, **RenderMan**, **Grafana**, **Jenkins**, **GitLab**  
+- **DevOps & Automation**: Docker, Kubernetes, Ansible, Terraform, Jenkins  
+- **Cloud Platforms**: AWS, Azure  
+- **Database Management**: MongoDB, PostgreSQL, MySQL  
+- **Version Control**: Git, GitLab, GitHub  
+- **API Development**: REST APIs, Python-based APIs, Integration of APIs with rendering tools (ShotGrid, Deadline)
 
 ---
 
-## Certifications
+## **Professional Experience**
+
+### **DevOps & Multi-Disciplinary IT Consultant**  
+*November 2023 – Present | Estonia*  
+- Developed **full-stack applications** for clients, using **React** for the frontend and **Node.js** for backend services.  
+- Configured and managed **cloud environments** on **AWS** and **Azure**, ensuring scalability and performance.  
+- Built and integrated **REST APIs** for backend services, automating workflows and cloud deployments.  
+- Implemented **CI/CD pipelines** using **Jenkins**, **Terraform**, and **Ansible** to automate the deployment process.
+
+### **Owner & Full Stack Developer | SG Production OÜ**  
+*July 2022 – Present | Estonia*  
+- Developed and deployed **full-stack applications** for **Deadline**, **ShotGrid**, and **Katana**, handling everything from **frontend** design to **backend architecture**.  
+- Created and integrated **REST APIs** to manage **data interactions** with **MongoDB** and **PostgreSQL**.  
+- Automated workflows using **Docker** and **Ansible**, optimizing deployment and scaling processes.  
+- Managed and set up **large MongoDB** and **SQL databases** for data storage, project tracking, and pipeline management.  
+- Wrote **Python automation scripts** to manage databases and scrape large datasets, improving data workflows.
+
+### **DevOps Engineer | Smartmatic-Cybernetica C.O.E for Internet Voting**  
+*January 2024 – August 2024 | Estonia*  
+- Architected and deployed **cloud infrastructure** using **Docker** and **AWS EC2** for scalable full-stack applications.  
+- Developed **Python-based automation scripts** for **CI/CD pipelines** and backend services.  
+- Integrated **ShotGrid** for project tracking and **Deadline Monitor** for render management across teams.  
+- Transitioned legacy codebases from **Python 2 to 3**, enhancing system performance and reliability.
+
+### **Lighting Technical Director | DNEG**  
+*August 2022 – March 2023 | London, UK*  
+- Automated lighting and rendering processes with **Python** and **Katana**, integrating **RenderMan** for optimized shaders.  
+- Developed **full-stack applications** to monitor render processes, integrating **React** for the frontend and **Python** for backend services.  
+- Managed **render queues** using **Deadline Monitor** and optimized system performance and uptime.
+
+### **Render Wrangler | Boulder Media**  
+*November 2019 – January 2021 | Dublin, Ireland*  
+- Managed **rendering workflows** using **Deadline Monitor** and automated the process with **Python** and **Shell scripting**.  
+- Built **full-stack applications** to track and manage render jobs, using **React** for the UI and **Node.js** for backend services.  
+- Developed and integrated **REST APIs** to streamline project management with **ShotGrid**.  
+- Managed **large MongoDB databases** for render data storage and automated **data scraping** and processing with **Python**.
+
+---
+
+## **Certifications**
 
 - **Build Front End Web Apps from Scratch**  
 - **Introduction to Python 3 Programming**  
@@ -81,14 +75,18 @@ Skilled **Technical Director**, **DevOps Specialist**, and **Python Developer** 
 
 ---
 
-## Education
+## **Education**
 
 - **Bachelor of Arts in Animation** – California State University, Northridge (2010–2012)  
 - **Associate of Arts in Animation** – College of the Canyons (2007–2010)
 
 ---
 
-## Links
+## **Links**
 
 - **LinkedIn**: [https://www.linkedin.com/in/sreyeeshgarimella](https://www.linkedin.com/in/sreyeeshgarimella)  
-- **Portfolio**: [https://ittoucan.com](https://ittoucan.com)  
+- **Portfolio**: [https://ittoucan.com](https://ittoucan.com)
+
+---
+
+This version emphasizes your role in developing **full-stack applications** for **Deadline**, **ShotGrid**, and **Katana**, handling everything from **user experience** to **backend** management, and integrating **REST APIs**. It also highlights your expertise in **database management** and **Python automation** for data workflows. Let me know if you'd like to make any further changes!
