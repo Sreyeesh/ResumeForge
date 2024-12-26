@@ -8,13 +8,13 @@ Valgjärve, Põlvamaa, Estonia
 
 ## **Professional Summary**
 
-Skilled **Full-Stack Developer**, **Technical Director**, and **DevOps Specialist** with extensive experience in developing and delivering **full-stack applications** for animation tools such as **Deadline**, **ShotGrid**, and **Katana**. Proficient in both **frontend** and **backend** development, from **user experience design** to **backend architecture**. Expertise in **REST API** development, **cloud platforms (AWS, Azure)**, **database management (MongoDB, SQL)**, and integrating industry tools for optimized workflows. Experienced in mentoring teams, managing complex infrastructure, and transitioning legacy code from **Python 2 to 3**.
+Skilled **Full-Stack Developer**, **Technical Director**, and **DevOps Specialist** with extensive experience in developing and delivering **full-stack applications** for animation tools such as **Deadline**, **ShotGrid**, and **Katana**. Proficient in both **frontend** and **backend** development, from **user experience design** to **backend architecture**. Expertise in **REST API** development, **cloud platforms (AWS, Azure)**, **database management (MongoDB, SQL)**, and integrating industry tools for optimized workflows. Experienced in mentoring teams, managing complex infrastructure, and modernizing legacy systems.
 
 ---
 
 ## **Technical Skills**
 
-- **Programming & Scripting**: Python (2 & 3), Bash, SQL, JavaScript, Lua, Go  
+- **Programming & Scripting**: Python, Bash, SQL, JavaScript, Lua, Go  
 - **Frontend Development**: React, Vue.js, Next.js, JavaScript, HTML/CSS  
 - **Backend Development**: Node.js, Express, Go, PHP, REST APIs, SQL (PostgreSQL, MySQL), MongoDB  
 - **Tools & APIs**: **ShotGrid**, **Deadline Monitor**, **Katana**, **RenderMan**, **Grafana**, **Jenkins**, **GitLab**  
@@ -47,14 +47,14 @@ Skilled **Full-Stack Developer**, **Technical Director**, and **DevOps Specialis
 *January 2024 – August 2024 | Estonia*  
 - Architected and deployed **cloud infrastructure** using **Docker** and **AWS EC2** for scalable full-stack applications.  
 - Developed **Python-based automation scripts** for **CI/CD pipelines** and backend services.  
-- Integrated **ShotGrid** for project tracking and **Deadline Monitor** for render management across teams.  
-- Transitioned legacy codebases from **Python 2 to 3**, enhancing system performance and reliability.
+- Integrated **ShotGrid** for project tracking and **Deadline Monitor** for render management across teams.
 
 ### **Lighting Technical Director | DNEG**  
 *August 2022 – March 2023 | London, UK*  
 - Automated lighting and rendering processes with **Python** and **Katana**, integrating **RenderMan** for optimized shaders.  
 - Developed **full-stack applications** to monitor render processes, integrating **React** for the frontend and **Python** for backend services.  
 - Managed **render queues** using **Deadline Monitor** and optimized system performance and uptime.
+- Led modernization of legacy Python codebase for lighting automation tools, improving pipeline stability and maintainability.
 
 ### **Render Wrangler | Boulder Media**  
 *November 2019 – January 2021 | Dublin, Ireland*  
@@ -62,6 +62,7 @@ Skilled **Full-Stack Developer**, **Technical Director**, and **DevOps Specialis
 - Built **full-stack applications** to track and manage render jobs, using **React** for the UI and **Node.js** for backend services.  
 - Developed and integrated **REST APIs** to streamline project management with **ShotGrid**.  
 - Managed **large MongoDB databases** for render data storage and automated **data scraping** and processing with **Python**.
+- Modernized legacy Python scripts in the rendering pipeline, enhancing workflow efficiency and reducing technical debt.
 
 ---
 
@@ -86,7 +87,3 @@ Skilled **Full-Stack Developer**, **Technical Director**, and **DevOps Specialis
 
 - **LinkedIn**: [https://www.linkedin.com/in/sreyeeshgarimella](https://www.linkedin.com/in/sreyeeshgarimella)  
 - **Portfolio**: [https://ittoucan.com](https://ittoucan.com)
-
----
-
-This version emphasizes your role in developing **full-stack applications** for **Deadline**, **ShotGrid**, and **Katana**, handling everything from **user experience** to **backend** management, and integrating **REST APIs**. It also highlights your expertise in **database management** and **Python automation** for data workflows. Let me know if you'd like to make any further changes!
