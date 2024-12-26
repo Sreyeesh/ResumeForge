@@ -45,9 +45,11 @@ Skilled **Full-Stack Developer**, **Technical Director**, and **DevOps Specialis
 
 ### **DevOps Engineer | Smartmatic-Cybernetica C.O.E for Internet Voting**  
 *January 2024 – August 2024 | Estonia*  
-- Architected and deployed **cloud infrastructure** using **Docker** and **AWS EC2** for scalable full-stack applications.  
-- Developed **Python-based automation scripts** for **CI/CD pipelines** and backend services.  
-- Integrated **ShotGrid** for project tracking and **Deadline Monitor** for render management across teams.
+- Architected and deployed **cloud infrastructure** using **Docker** and **AWS EC2** for scalable full-stack applications.
+- Developed microservices and automation tools using **Go**, improving system reliability and performance.
+- Implemented **Infrastructure as Code** using **Ansible** for automated environment provisioning and configuration management.
+- Created comprehensive **AWS** deployment strategies, including load balancing, auto-scaling, and security configurations.
+- Built and maintained **CI/CD pipelines** for containerized applications using **Docker** and automated deployment workflows.
 
 ### **Lighting Technical Director | DNEG**  
 *August 2022 – March 2023 | London, UK*  
