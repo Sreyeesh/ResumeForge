@@ -8,7 +8,8 @@ Valgjärve, Põlvamaa, Estonia
 
 ## **Professional Summary**
 
-Skilled **Full-Stack Developer**, **Technical Director**, and **DevOps Specialist** with extensive experience in developing and delivering **full-stack applications** for animation tools such as **Deadline**, **ShotGrid**, and **Katana**. Proficient in both **frontend** and **backend** development, from **user experience design** to **backend architecture**. Expertise in **REST API** development, **cloud platforms (AWS, Azure)**, **database management (MongoDB, SQL)**, and integrating industry tools for optimized workflows. Experienced in mentoring teams, managing complex infrastructure, and modernizing legacy systems.
+
+Skilled **Full-Stack Developer** and **DevOps Specialist** with extensive experience in developing and delivering **full-stack applications** across various industries. Proficient in both **frontend** and **backend** development, from **user experience design** to **backend architecture**. Expertise in **REST API** development, **cloud platforms (AWS, Azure)**, **database management (MongoDB, SQL)**, and optimizing workflows with modern technologies. Experienced in mentoring teams, managing complex infrastructure, and modernizing legacy systems to improve efficiency and scalability. Passionate about leveraging technology to drive impactful solutions in dynamic environments.
 
 ---
 
