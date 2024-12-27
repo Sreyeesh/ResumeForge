@@ -84,7 +84,6 @@ Skilled **Full-Stack Developer**, **Technical Director**, and **DevOps Specialis
 - **Associate of Arts in Animation** – College of the Canyons (2007–2010)
 
 ---
-
 ## **Links**
 
 - **LinkedIn**: [https://www.linkedin.com/in/sreyeeshgarimella](https://www.linkedin.com/in/sreyeeshgarimella)  
