@@ -1,120 +1,143 @@
-**Sreyeesh Garimella**
-Valgjärve, Põlvamaa, Estonia
-[Portfolio Site](https://sreyeesh.github.io/sreyeesh-devops-terminal/)
-+372 5827 7155 | [sgarime1@gmail.com](mailto\:sgarime1@gmail.com) | [LinkedIn](https://www.linkedin.com/in/sreyeeshgarimella) | [Portfolio](https://ittoucan.com)
+### **Sreyeesh Garimella**
+Valgjärve, Põlvamaa, Estonia  
+[Portfolio Site](https://sreyeesh.github.io/sreyeesh-devops-terminal/) | +372 5827 7155  
+[sgarime1@gmail.com](mailto:sgarime1@gmail.com) | [LinkedIn](https://www.linkedin.com/in/sreyeeshgarimella) | [Portfolio](https://ittoucan.com)  
 
 ---
 
 ### **DevOps Engineer**
 
 **Summary**
-Dynamic DevOps Engineer and Cloud Specialist with extensive experience in cloud infrastructure, scalable CI/CD pipelines, and advanced monitoring systems. Expertise in AWS and Azure platforms, automated testing frameworks, and containerization technologies. Proven track record of optimizing workflows, building reliable systems, and delivering high-quality solutions for diverse industries.
+Dynamic and results-driven DevOps Engineer with extensive experience in cloud infrastructure, CI/CD pipelines, and advanced monitoring systems. Expertise in AWS, Azure, containerization, and automation frameworks. Proven ability to optimize workflows, build reliable systems, and deliver impactful solutions for diverse industries, including animation, gaming, and IT consulting.
 
 ---
 
 ### **Key Skills**
 
-- **Cloud Platforms:** AWS (EC2, S3, CloudFormation), Azure
-- **Rendering Systems:** AWS Cloud Rendering, Deadline Monitoring
-- **DevOps Tools:** Jenkins, Ansible, Terraform, Docker, Kubernetes
-- **Programming & Scripting:** Python, Bash, SQL, JavaScript, Lua
-- **Monitoring & Visualization:** Grafana, Prometheus
-- **Database Management:** PostgreSQL, MongoDB, MySQL
-- **Automation & Testing:** Selenium, Postman, Appium
-- **Version Control:** Git, GitLab, GitHub
+- **Cloud Platforms:** AWS (EC2, S3, CloudFormation), Azure  
+- **DevOps Tools:** Jenkins, Ansible, Terraform, Docker, Kubernetes  
+- **Programming & Scripting:** Python, Bash, JavaScript, Lua, SQL  
+- **CI/CD Pipelines:** GitHub Actions, Jenkins, GitLab CI/CD  
+- **Monitoring & Visualization:** Grafana, Prometheus  
+- **Database Management:** PostgreSQL, MongoDB, MySQL  
+- **Automation & Testing:** Selenium, Postman, Appium  
+- **Version Control:** Git, GitHub, GitLab  
 
 ---
 
 ### **Professional Experience**
 
-#### **DevOps Consultant**
+#### **DevOps Consultant**  
+*November 2023 – Present* | Estonia  
+**Synopsis:** Providing comprehensive technical support, infrastructure management, and DevOps solutions to enhance operational efficiency and scalability for clients.  
 
-*November 2023 – Present* | Estonia
+**Responsibilities:**  
+- Designed and managed AWS cloud infrastructure, ensuring high availability and scalability.  
+- Developed CI/CD pipelines using Jenkins and Ansible, reducing deployment times by 30%.  
+- Integrated Grafana and Prometheus to proactively monitor and optimize system performance.  
+- Automated workflows using Python to scale infrastructure for cloud rendering and deployments.  
+- Implemented Docker and Kubernetes for containerized deployments, enhancing system reliability.  
 
-- Designed and managed AWS cloud infrastructure, ensuring high availability and scalability.
-- Developed CI/CD pipelines using Jenkins and Ansible, reducing deployment times by 30%.
-- Integrated monitoring tools like Grafana to proactively optimize system performance.
-- Automated testing frameworks using Selenium and Postman for reliable application delivery.
-- Developed AWS tools and pipeline automation scripts using Python to scale infrastructure and streamline deployments to the cloud, enabling automated workflows for cloud rendering.
+**Technologies Used:**  
+- AWS (EC2, S3, CloudFormation), Docker, Kubernetes, Jenkins, Ansible  
+- Python, Prometheus, Grafana  
 
-#### **Owner & Full Stack Developer**
+#### **Owner & Full Stack Developer**  
+**SG Production OÜ**  
+*July 2022 – Present* | Estonia  
+**Synopsis:** Delivering custom automation tools and scalable solutions for IT and VFX industries.  
 
-**SG Production OÜ**\
-*July 2022 – Present* | Estonia
+**Responsibilities:**  
+- Created Python-based automation tools for VFX workflows and IT consulting.  
+- Deployed scalable cloud solutions with Docker and Ansible.  
+- Managed PostgreSQL and MongoDB databases for backend services.  
 
-- Created Python-based tools to automate workflows in VFX and IT consulting.
-- Deployed scalable cloud solutions with Docker and Ansible.
-- Managed and optimized PostgreSQL and MongoDB databases for backend operations.
+**Technologies Used:**  
+- Python, Docker, Ansible, PostgreSQL, MongoDB  
 
-#### **DevOps Engineer**
+#### **DevOps Engineer**  
+**Smartmatic-Cybernetica C.O.E for Internet Voting**  
+*January 2024 – August 2024* | Tartu, Estonia  
+**Synopsis:** Architected and managed infrastructure to support secure and scalable internet voting solutions.  
 
-**Smartmatic-Cybernetica C.O.E for Internet Voting**\
-*January 2024 – August 2024* | Tartu, Estonia
+**Responsibilities:**  
+- Architected infrastructure solutions using Docker, Terraform, and AWS EC2.  
+- Implemented CI/CD automation to accelerate and secure software deployments.  
+- Enhanced cloud monitoring with Grafana, enabling proactive issue detection.  
 
-- Architected infrastructure solutions using Docker, Ansible, and AWS EC2.
-- Implemented CI/CD automation for faster and more reliable software releases.
-- Enhanced cloud monitoring systems with Grafana to ensure system reliability.
+**Technologies Used:**  
+- AWS EC2, Docker, Terraform, Grafana, Jenkins  
 
-#### **write**
+#### **Cloud Rendering Specialist**  
+**Boulder Media**  
+*November 2019 – January 2021* | Dublin, Ireland  
+**Synopsis:** Designed and optimized rendering solutions leveraging cloud infrastructure.  
 
-**Boulder Media**\
-*November 2019 – January 2021* | Dublin, Ireland
+**Responsibilities:**  
+- Leveraged AWS cloud rendering to process large-scale VFX projects.  
+- Set up Deadline for monitoring and queuing rendering tasks, optimizing efficiency.  
+- Developed custom Grafana dashboards for real-time system performance monitoring.  
 
-- Utilized AWS cloud rendering for large-scale rendering projects, processing terabytes of data.
-- Set up cloud storage and integrated Deadline for monitoring and queuing rendering jobs.
-- Proactively resolved infrastructure issues, ensuring efficient rendering workflows.
-- Used Grafana to monitor system and network traffic and set up custom dashboards for enhanced visibility.
+**Technologies Used:**  
+- AWS (Cloud Rendering, S3), Grafana, Deadline  
 
-#### **Lighting Technical Director**
+#### **Lighting Technical Director**  
+**DNEG**  
+*August 2022 – March 2023* | London, UK  
+**Synopsis:** Provided DevOps and technical support for rendering and lighting processes in high-profile VFX projects.  
 
-**DNEG**\
-*August 2022 – March 2023* | London, UK
+**Responsibilities:**  
+- Automated rendering and lighting pipelines with Python, boosting efficiency.  
+- Designed and managed cloud-based rendering workflows using AWS and Docker.  
+- Integrated CI/CD tools to streamline deployment processes and maintain system reliability.  
+- Utilized Grafana to monitor system performance and ensure smooth rendering operations.  
 
-- Automated rendering and lighting processes with Python, improving team efficiency.
-- Deployed RenderMan shaders and monitored system performance for optimal output.
+**Technologies Used:**  
+- Python, AWS, Docker, Grafana, CI/CD Tools  
 
-#### **Production Show Technician**
+#### **Production Show Technician**  
+**Blizzard Entertainment**  
+*May 2021 – November 2021* | Irvine, CA, USA  
+**Synopsis:** Streamlined technical workflows for cinematic animation teams.  
 
-**Blizzard Entertainment**\
-*May 2021 – November 2021* | Irvine, CA, USA
+**Responsibilities:**  
+- Developed Python and Lua scripts to enhance cinematic animation workflows.  
+- Supported game teams with optimized tools for seamless animation production.  
 
-- Developed Python and Lua scripts to streamline pipelines for in-game cinematics.
-- Supported World of Warcraft and Overwatch 2 animation teams with optimized workflows.
+**Technologies Used:**  
+- Python, Lua, Workflow Automation Tools  
 
 ---
 
 ### **Education**
 
-- **Bachelor of Arts in Animation** – California State University, Northridge (2010–2012)
-- **Associate of Arts in Animation** – College of the Canyons (2007–2010)
+- **Bachelor of Arts in Animation** – California State University, Northridge (2010–2012)  
+- **Associate of Arts in Animation** – College of the Canyons (2007–2010)  
 
 ---
 
 ### **Certifications**
 
-- Build Front-End Web Apps from Scratch
-- Introduction to Python 3 Programming
-- Front-End Web Development Basics with React.js
+- AWS Certified Solutions Architect – Associate
+- Docker Certified Associate
+- Terraform Associate Certification
 - Programming with Python
-- Introduction to CSS Training
+- Front-End Web Development Basics with React.js
 
 ---
 
 ### **Notable Projects**
 
-- **AWS Cloud Rendering:** Architected and managed cloud rendering systems for large-scale VFX projects, ensuring efficient processing of terabytes of data.
-
-- **Grafana Dashboards:** Set up and configured custom dashboards to monitor system and network traffic, enhancing operational transparency.
-
-- **CI/CD Optimization:** Designed scalable pipelines that reduced deployment times and improved system reliability.
-
-- **Monitoring Solutions:** Integrated advanced monitoring dashboards with Grafana and Prometheus, enabling proactive issue resolution.
+- **AWS Cloud Rendering:** Designed and managed scalable cloud rendering systems, processing terabytes of data efficiently.
+- **Grafana Dashboards:** Configured advanced monitoring dashboards for real-time system performance insights.
+- **CI/CD Optimization:** Built robust pipelines that improved deployment speed and reliability.
+- **Infrastructure Automation:** Automated provisioning and deployment using Terraform and Ansible.
 
 ---
 
 ### **Hobbies and Interests**
 
-- Active participation in DevOps and VFX communities.
-- Exploring emerging technologies in cloud computing and automation.
-- Developing personal projects to enhance technical skills.
+- Engaging in DevOps and cloud technology communities.  
+- Exploring new trends in automation and containerization.  
+- Building personal projects to refine technical skills.
 
